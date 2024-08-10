@@ -19,7 +19,7 @@ MoViNet-A2 serves as the backbone for creating a new model with an updated class
 After training, the model is saved as `movinet_a2_base` by default.
 
 ## Low Latency Inference
-The [test_a2_base.py](https://github.com/Digua04/Capstone/blob/main/test_a2_base.py) script uses the saved model to predict avatar actions in a video. The inference latency per frame on an NVIDIA RTX 4090 GPU is approximately 39 ms, demonstrating the model's capability for real-time inference.
+The [test_a2_base.py](https://github.com/Digua04/Capstone/blob/main/inference/test_a2_base.py) script uses the saved model to predict avatar actions in a video. The inference latency per frame on an NVIDIA RTX 4090 GPU is approximately 39 ms, demonstrating the model's capability for real-time inference.
 To select a saved model trained on the VR2_slapping, human, or cartoon dataset, uncomment the corresponding line below.
 ```python
 loaded_model = tf.saved_model.load('movinet_a2_base')
